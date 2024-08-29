@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="./js/chart.js" defer></script>
+    <script src="./js/nav.js" defer></script>
+    <title>Teacher's dashboard</title>
+  </head>
+
+  <body>
+    <section id="wholeBody">
+      <!-- SIDE NAV -->
+      <section id="side-nav" class="">
+        <div id="nav">
+          <nav class="links">
+            <!-- <a href="">
+              <span id="logo">S_cool</span>
+            </a> -->
+
+            <hr />
+
+            <ul id="link-holder">
+              <a href="./index.html" class="link">
+                <i class="bx bxs-home"></i>
+                <span>Home</span>
+              </a>
+
+              <a href="./student.html" class="link">
+                <i class="bx bxs-group"></i>
+                <span>Students</span>
+                <button class="add">&plus;</button>
+              </a>
+
+              <a href="./syllabus.html" class="link">
+                <i class="bx bxs-user"></i>
+                <span>Syllabus</span>
+                <button class="add">&plus;</button>
+              </a>
+
+              <a href="#" class="link">
+                <i class="bx bxs-wallet-alt"></i>
+                <span>Accounting</span>
+              </a>
+
+              <a href="#" class="link">
+                <i class="bx bxs-envelope"></i>
+                <span>Messages</span>
+              </a>
+            </ul>
+
+            <!-- <hr /> -->
+
+            <ul>
+              <li>
+                <a href="#" class="link">
+                  <i class="bx bxs-cog"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li class="red">
+                <a href="#" class="link">
+                  <i class="bx bxs-exit"></i>
+                  <span>Sign out</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- SIDE NAV -->
+
+      <section id="bodyContainer">
+        <div id="top-nav">
+          <div id="hamburger">
+            <span class="burg1 burg"></span>
+            <span class="burg2 burg"></span>
+            <span class="burg3 burg"></span>
+          </div>
+        </div>
+
+        <div id="dashboard">
+          <div class="panel-holder">
+            <div class="column">
+
+              <div class="panel personal--data">
+                <h4>Personal Data</h4>
+
+                <div class="details">
+                  <img class="personal--img" src="./img/1.jpg" alt="">
+                  <p>
+                    <span class="gray">Name:</span> Oyibo Marvelight</p>
+                  <p><span class="gray">Class Teaching: </span>SSS2</p>
+                  <p><span class="gray">Subject Teaching: </span>Biology</p>
+                  <p><span class="gray">Department: </span>Science</p>
+                  <p><span class="gray">Earnings(monthly): </span>40,000 - 60,000</p>
+                </div>
+
+              </div>
+
+              <div class="panel attendance">
+                <h4>Personal Attendance</h4>
+                <span class="gray">Last 7 days</span>
+
+                <div id="try">
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="column">
+              <div class="panel">
+                <h4>Class Attendance</h4>
+                <span class="gray">Last 7 days</span>
+                <canvas id="satisfaction"></canvas>
+              </div>
+              <div class="panel attendance">
+                <h4>Attendance</h4>
+                <span class="gray">Last 7 days</span>
+
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

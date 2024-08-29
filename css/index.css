@@ -1,0 +1,70 @@
+
+/* DASHBOARD */
+
+#dashboard {
+    padding: 1rem;
+}
+
+h4 {
+    color: #444;
+}
+
+.panel {
+    border-radius: 3px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    padding: 1em;
+    position: relative;
+}
+
+.panel-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gray {
+    color: var(--gray);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* .personal--data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+} */
+
+.personal--img{
+    transition: .4s ease width;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+/* RESPONSIVENESS */
+
+@media(max-width: 720px){
+    .panel-holder{
+        display: flex;
+        flex-direction: column;
+        position: unset;
+    }
+
+
+}

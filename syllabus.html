@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/syllabus.css" />
+    <script src="./js/chart.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+
+    <script src="./js/nav.js" defer></script>
+    <title>Syllabus page</title>
+  </head>
+
+  <body></body>
+  <section id="wholeBody">
+    <!-- SIDE NAV -->
+    <section id="side-nav" class="">
+      <div id="nav">
+        <nav class="links">
+          <!-- <a href="">
+              <span id="logo">S_cool</span>
+            </a> -->
+
+          <hr />
+
+          <ul id="link-holder">
+            <a href="./index.html" class="link">
+              <i class="bx bxs-home"></i>
+              <span>Home</span>
+            </a>
+
+            <a href="./student.html" class="link">
+              <i class="bx bxs-group"></i>
+              <span>Students</span>
+              <button class="add">&plus;</button>
+            </a>
+
+            <a href="./syllabus.html" class="link">
+              <i class="bx bxs-user"></i>
+              <span>Syllabus</span>
+              <button class="add">&plus;</button>
+            </a>
+
+            <a href="#" class="link">
+              <i class="bx bxs-wallet-alt"></i>
+              <span>Accounting</span>
+            </a>
+
+            <a href="#" class="link">
+              <i class="bx bxs-envelope"></i>
+              <span>Messages</span>
+            </a>
+          </ul>
+
+          <!-- <hr /> -->
+
+          <ul>
+            <li id="acc-trig">
+              <a href="#" class="link">
+                <i class="bx bxs-cog"></i>
+                <span>Settings</span>
+              </a>
+              <span class="accordion">
+                <i class="bx bxs-cog"></i>
+                <span>Settings</span>
+              </span>
+            </li>
+
+            <li class="red">
+              <a href="#" class="link">
+                <i class="bx bxs-exit"></i>
+                <span>Sign out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- SIDE NAV -->
+
+    <section id="bodyContainer">
+      <!--- topNav -->
+      <div id="top-nav">
+        <div id="hamburger">
+          <span class="burg1 burg"></span>
+          <span class="burg2 burg"></span>
+          <span class="burg3 burg"></span>
+        </div>
+      </div>
+
+      <hr />
+      <div id="search">
+        <form action="">
+          <div class="data">
+            <div class="inp">
+              <select placeholder="subject">
+                <option value="Mathematics">Mathematics JSS1</option>
+                <option value="Biology">Biology SSS2</option>
+                <option value="English">English SSS1</option>
+                <option value="History">History JSS3</option>
+              </select>
+            </div>
+
+            <div class="inp">
+              <button>Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="table">
+        <div class="col table--head">
+          <div class="row1 gray">Week</div>
+          <div class="row2 gray">Topic</div>
+          <div class="row1 gray">Sub-topic</div>
+          <div class="row2 gray">Tick</div>
+        </div>
+
+        <div class="col1">
+          <div class="row1">
+            <p>1 - 2</p>
+          </div>
+          <div class="row2">
+            <p>Indices</p>
+          </div>
+          <div class="row1">
+            <li>Rules of indices</li>
+            <li>Multiplication of indices</li>
+            <li>Division of indices</li>
+            <li>Indical equation</li>
+          </div>
+          <div class="row2"></div>
+        </div>
+
+        <div class="col2">
+          <div class="row1">
+            <p>3 - 4</p>
+          </div>
+          <div class="row2">
+            <p>Logarithm</p>
+          </div>
+          <div class="row1">
+            <li>Logarithms less than 1</li>
+            <li>The four figure table</li>
+            <li>s</li>
+            <li>Indical equation</li>
+          </div>
+          <div class="row2"></div>
+        </div>
+        
+        <div class="col1">
+          <div class="row1">
+            <p>5 - 7</p>
+          </div>
+          <div class="row2">
+            <p>Geometry</p>
+          </div>
+          <div class="row1">
+            <li>Circle geometry</>
+            <li>Special angles</>
+            <li>parrallel lines</>
+            <li>Perpendicular lines</>
+          </div>
+          <div class="row2"></div>
+        </div>
+
+        <div class="col2">
+          <div class="row1"></div>
+          <div class="row2"></div>
+          <div class="row1"></div>
+          <div class="row2"></div>
+        </div>
+      </div>
+    </section>
+  </section>
+</html>

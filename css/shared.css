@@ -1,0 +1,77 @@
+:root {
+    --gray: rgb(128, 128, 128);
+    --chart-color: rgb(255, 99, 132);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8F9FA;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    word-wrap: break-word !important;
+}
+
+hr {
+    color: white;
+}
+
+#wholeBody {
+    position: relative;
+}
+
+
+
+input, select {
+    padding: 6px 12px;
+    border: 1px solid rgba(102, 102, 102, 0.507);
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    transition: .1s ease;
+}
+
+input:focus,select:focus {
+    border: 1px solid rgba(0, 167, 218, 0.507);
+    outline: 2px solid #007bff41;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+#search > form > div > div:nth-child(3) > button {
+    padding: 9px 12px;
+    background-color: #007bff;
+    border-radius: 6px;
+    border: none;
+    color: white;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#bodyContainer{
+    padding: 1rem;
+}
