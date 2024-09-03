@@ -1,6 +1,6 @@
 #bodyContainer {
     transition: .4s ease-in margin;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 
 #side-nav {
@@ -18,8 +18,9 @@
     width: 250px !important;
 }
 
-i{
+i {
     font-size: 1.8rem;
+    text-align: center;
 }
 
 #logo {
@@ -37,7 +38,7 @@ i{
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: .5rem ;
+    padding: .5rem;
     justify-content: space-between;
 }
 
@@ -141,7 +142,7 @@ a.link:hover {
     background-color: rgba(255, 255, 255, 0.247);
     backdrop-filter: blur(10px);
     width: 100%;
-    transition: .4s ease ;
+    transition: .4s ease;
 }
 
 #acc-trig .link {
@@ -156,7 +157,7 @@ a.link:hover {
     transition: max-height .4s ease;
 }
 
-.accordion.show{
+.accordion.show {
     /* display: block; */
     margin: 1rem;
 }
@@ -164,17 +165,27 @@ a.link:hover {
 /* RESPONSIVENESS */
 
 @media(max-width: 720px) {
+    #bodyContainer{
+        margin-left: 0;
+        height: 100vh;
+    }
+
     #side-nav {
-        position: absolute;
+        width: 100vw !important;
+        height: 3rem !important;
+        position: fixed;
+        right: 50%;
+        bottom: -10%;
         z-index: 1;
     }
-/* 
+
+    /* 
     #bodyContainer.shrink {
         pointer-events: none;
     } */
 
     .shrink {
-        margin: 0;
+        margin: 0 !important;
     }
 
     #top-nav {
@@ -182,11 +193,32 @@ a.link:hover {
     }
 
     #hamburger {
-        z-index: 2;
+        display: none;
     }
 
     .shift {
         right: 30%;
         top: 10%;
     }
+
+    hr {
+        display: none;
+    }
+
+    .links,
+    #link-holder {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .link{
+        justify-content: center !important;
+    }
+
+    ul.bottom-nav{
+        display: none;
+    }
+
 }

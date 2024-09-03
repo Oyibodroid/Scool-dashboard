@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     background-color: #F8F9FA;
 }
 
@@ -34,6 +34,7 @@ hr {
 }
 
 #wholeBody {
+    height: 100vh;
     position: relative;
 }
 

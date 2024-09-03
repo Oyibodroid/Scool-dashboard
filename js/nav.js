@@ -12,7 +12,9 @@ if (sideNav.classList !== "open") {
     l.style.display = "none";
   });
 } else {
-  l.style.display = "block";
+  linkText.forEach((l) => {
+    l.style.display = "block";
+  });
   linkHolder.style.padding = "1rem";
 }
 
