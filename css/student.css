@@ -3,7 +3,7 @@
 }
 
 .table {
-    margin: 1rem;
+    margin: 1rem 0;
     border: 1px solid rgb(214, 214, 214);
     border-radius: 8px;
     overflow-y: hidden;
