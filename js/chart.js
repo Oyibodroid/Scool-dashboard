@@ -21,4 +21,4 @@ new Chart(ctx, {
 responsive: true,
   },
 });
-myChart.resize();
+// myChart.resize();
