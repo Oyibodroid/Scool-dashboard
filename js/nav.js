@@ -5,7 +5,7 @@ const burg = document.querySelectorAll(".burg");
 const linkHolder = document.querySelector(".links ul");
 const linkText = document.querySelectorAll(".link span");
 
-console.log(linkText);
+// console.log(linkText);
 if (sideNav.classList !== "open") {
   linkHolder.style.padding = "0";
   linkText.forEach((l) => {
@@ -13,7 +13,7 @@ if (sideNav.classList !== "open") {
   });
 } else {
   linkText.forEach((l) => {
-    l.style.display = "block";
+    l.style.display = " ";
   });
   linkHolder.style.padding = "1rem";
 }
@@ -32,7 +32,7 @@ hamBurger.addEventListener("click", function () {
     }
   });
 
-  console.log(sideNav.classList);
+  // console.log(sideNav.classList);
 });
 
 // accordion
